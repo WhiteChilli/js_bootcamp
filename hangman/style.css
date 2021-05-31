@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+
+#top {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90px;
+  
+  height: 15%;
+  color: tomato;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#top:hover {
+  color: greenyellow;
+}
+
+#mid {
+  
+  height: 35%;
+}
+
+#bott {
+  
+  height: 50%;
+}
+
+.letterContainer {
+  width: 110%;
+  border-bottom: 4px solid black;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.letterContainer:hover {
+  background-color: rgb(236, 233, 233);
+}
+
+.guessWord {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.keyboardRow {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.keyboardLetter {
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+
+}

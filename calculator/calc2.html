@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="calc2style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="calculator">
+    <div id="result">0</div>
+
+    <div id="button">
+
+      <div class="row">
+        <button onclick="setOperator(OPERATION_SQRT)">√</button>
+        <button onclick="setOperator(OPERATION_SQUARE)">a²</button>
+        <button onclick="setOperator(OPERATION_MOD)">%</button>
+        <button onclick="reset()">C</button>
+      </div>
+
+      <div class="row">
+        <button onclick="setInputNumber(this)">7</button>
+        <button onclick="setInputNumber(this)">8</button>
+        <button onclick="setInputNumber(this)">9</button>
+        <button onclick="setOperator(OPERATION_DIVISION)">÷</button>
+      </div>
+
+      <div class="row">
+        <button onclick="setInputNumber(this)">4</button>
+        <button onclick="setInputNumber(this)">5</button>
+        <button onclick="setInputNumber(this)">6</button>
+        <button onclick="setOperator(OPERATION_MULTIPLICATION)">*</button>
+      </div>
+
+      <div class="row">
+        <button onclick="setInputNumber(this)">1</button>
+        <button onclick="setInputNumber(this)">2</button>
+        <button onclick="setInputNumber(this)">3</button>
+        <button onclick="setOperator(OPERATION_SUBTRACTION)">-</button>
+      </div>
+
+      <div class="row">
+        <button onclick="setInputNumber(this)">0</button>
+        <button onclick="setCommaEnabled(true)">.</button>
+        <button onclick="setOperator(OPERATION_ADDITION)">+</button>
+        <button onclick="setOperator(OPERATION_EQUALS)">=</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="calcjs.js"></script>  
+</body>
+
+</html>
