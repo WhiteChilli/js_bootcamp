@@ -195,6 +195,7 @@ main {
   background-color: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
+  margin: 5px;
 }
 
 .question-title {
@@ -210,8 +211,40 @@ main {
   background: transparent;
   border-color: transparent;
   color: var(--clr-gold);
+  transition: var(--transition);
 }
 
 .question-btn:hover {
   cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.question-text {
+  padding: 15px;
+
+}
+
+.question-text p {
+  margin-bottom: 0;
+}
+
+
+.question-text {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
