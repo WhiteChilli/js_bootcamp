@@ -1,6 +1,6 @@
-const CELLS_VERT = 3;
-const CELLS_HOR = 3;
-const EMPTY_SYM = ' ';
+const CELLS_VERT = 3
+const CELLS_HOR = 3
+const EMPTY_SYM = ' '
 let FIRST_PLAYER_SYM = 'X'
 let SECOND_PLAYER_SYM = 'O'
 let FIRST_PLAYER_COLOR = 'red'
@@ -8,14 +8,14 @@ let SECOND_PLAYER_COLOR = 'blue'
 
 let gameBoard = [];
 
-let isPlayerTurn = true;
+let isPlayerTurn = true
 
 window.onload = function() {
-  initializeBoard();
+  initializeBoard()
 }
 
 function initializeBoard() {
-  gameboard = []
+  gameBoard = []
   for (let row = 0; row < CELLS_VERT; row++) {
     let gameBoardRow = []
     for (let col = 0; col < CELLS_HOR; col++) {
@@ -166,6 +166,8 @@ function resetBoard() {
   }
   let gameResult = document.getElementById('gameResult')
   gameResult.innerText = 'Tic Tac Toe!'
-  gameResult.style.pointerEvents = 'auto'
-  isPlayerTurn = true;
+
+  let gameBoard = document.getElementById('gameBoard')
+  gameBoard.style.pointerEvents = 'auto'
+  isPlayerTurn = true
 }
