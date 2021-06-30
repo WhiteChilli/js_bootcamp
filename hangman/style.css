@@ -1,68 +1,76 @@
 .container {
-  width: 100%;
-  text-align: center;
+    width: 100%;
 }
-
 
 #top {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 90px;
-  
-  height: 15%;
-  color: tomato;
-  text-align: center;
-  margin-bottom: 100px;
+    height: 15%;
 }
 
-#top:hover {
-  color: greenyellow;
+#healthContainer {
+    height: 60px;
+}
+
+#playButton {
+  font-family: 'Kirang Haerang', cursive;
+    letter-spacing: 3px;
+    font-size: 90px;
+    text-align: center;
+    color: tomato;
+}
+
+#playButton:hover { 
+    color: rgb(66, 187, 66);
+    cursor: pointer;
 }
 
 #mid {
-  
-  height: 35%;
+    height: 35%;
+    text-align: center;
+    user-select: none;
 }
 
-#bott {
-  
-  height: 50%;
+#bot {
+    height: 50%;
 }
 
 .letterContainer {
-  width: 110%;
-  border-bottom: 4px solid black;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 70px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    margin-right: 10px;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.letterContainer:hover {
-  background-color: rgb(236, 233, 233);
-}
+.letterContainer:hover { background-color: rgb(228, 224, 224); }
 
 .guessWord {
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 100px;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Comic Neue', cursive;
+
 }
 
 .keyboardRow {
-  display: flex;
-  margin: 0 auto;
-  width: 75%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
 }
 
 .keyboardLetter {
-  border: 1px solid black;
-  padding: 0;
-  margin: 0;
-
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
 }
+
+.healthPoint {
+    height: 50%;
+}
+
+

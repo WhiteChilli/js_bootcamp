@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="top" class="container">
-    Hangman
-  </div>
-  <div id="mid" class="container"></div>
-  <div id="bott" class="container"></div>
-</body>
-<script src="app.js"></script>
+<html>
+    <head>
+        <title>Hangman</title>
+        <link href='style.css' rel='stylesheet'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Kirang+Haerang&display=swap" rel="stylesheet"
+    </head>
+
+    <body>
+        <div id='top' class='container'>
+            <div id='healthContainer'></div>
+            <div id='playButton' onclick="play()">Hangman</div>
+        </div>
+        <div id='mid' class='container'>
+        </div>
+        <div id='bot' class='container'></div>
+
+
+        <script src='app.js'></script>
+    </body>
+
 </html>
