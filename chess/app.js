@@ -11,6 +11,7 @@ canvas.width = TILE_WIDTH * 8
 canvas.height = TILE_WIDTH * 8
 canvas.style.border = '1px solid black'
 
+
 function createImage(x, y) {
   let img = new Image()
   img.width = TILE_WIDTH * 0.8
@@ -32,7 +33,7 @@ class Board {
 
   placeFigures() {
     for (const [i, tileRow] of this.tiles.entries()) {
-      if (i !== 0 && i !== 1 && i !==6 && i !== 7) { continue }
+      if (i !== 0 && i !== 1 && i !== 6 && i !== 7) { continue }
 
       for (const tile of tileRow) {
         tile.setFigure(new Rook(this))
@@ -45,7 +46,7 @@ class Board {
     for (let row = 0; row < 8; row++) {
       let tileRow = []
       for (let col = 0; col < 8; col++) {
-        let color = row + col % 2 === 0 ? LIGHT_TILE_COLOR : DARK_TILE_COLOR
+        let color = (row + col) % 2 === 0 ? LIGHT_TILE_COLOR : DARK_TILE_COLOR
         tileRow.push(new Tile(col * TILE_WIDTH, row * TILE_HEIGHT, color))
       }
       this.tiles.push(tileRow)
@@ -74,7 +75,6 @@ class Tile {
     ctx.beginPath()
     ctx.fillStyle = this.color
     ctx.rect(this.x, this.y, TILE_WIDTH, TILE_HEIGHT)
-    ctx.fill()
 
     if (this.figure) {
       ctx.drawImage(this.figure.img, this.x, this.y)
